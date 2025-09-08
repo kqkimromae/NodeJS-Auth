@@ -1,4 +1,4 @@
-import prisma from "../lib/prisma.js";
+import prisma from "../libss/prisma.js";
 
 // GET all books
 export const getProduct = async (req, res) => {
@@ -23,7 +23,7 @@ export const getProductById = async (req, res) => {
 };
 
 // CREATE book
-export const createProduct = async (req, res) => {
+export const addProduct = async (req, res) => {
   try {
     const newBook = await prisma.product.create({
       data: req.body,
