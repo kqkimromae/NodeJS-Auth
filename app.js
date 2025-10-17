@@ -1,4 +1,4 @@
-import exprees from"express";
+import express from"express";
 import cors from "cors";
 import dotenv from "dotenv";
 import productRoutes from "./routes/productRoutes.js";
@@ -6,10 +6,10 @@ import authRoutes from "./routes/authRoutes.js";
 
 
 dotenv.config();
-const app = exprees()
+const app = express()
 
 app.use(cors())
-app.use(exprees.json())
+app.use(express.json())
 
 app.get("/",(req,res) =>{
     res.send("API is running....")

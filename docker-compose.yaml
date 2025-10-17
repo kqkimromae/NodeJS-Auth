@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: user_t
       POSTGRES_PASSWORD: pass_t
-      POSTGRES-DB: AuthenticationToken_db
+      POSTGRES_DB: AuthenticationToken_db
     ports:
       - "5432:5432"
     volumes:

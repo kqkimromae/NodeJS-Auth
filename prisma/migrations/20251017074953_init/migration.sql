@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE "public"."User" (
     "id" SERIAL NOT NULL,
-    "user_name" TEXT NOT NULL,
+    "username" TEXT NOT NULL,
     "password" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "role" TEXT NOT NULL DEFAULT 'USER',
@@ -25,4 +25,4 @@ CREATE TABLE "public"."Product" (
 );
 
 -- CreateIndex
-CREATE UNIQUE INDEX "User_user_name_key" ON "public"."User"("user_name");
+CREATE UNIQUE INDEX "User_username_key" ON "public"."User"("username");

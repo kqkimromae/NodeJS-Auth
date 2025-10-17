@@ -2,7 +2,7 @@ import prisma from "../libss/prisma.js";
 
 // GET all books
 export const getProduct = async (req, res) => {
-  try {
+    try {
     const books = await prisma.product.findMany();
     res.json(books);
   } catch (err) {
